@@ -1,0 +1,18 @@
+<package>
+  <name>statistics_diag_bridge</name>
+  <version>0.0.1</version>
+  <description>Monitors topic statistics for changes and signal it through diagnostics.</description>
+  <maintainer email="forouher@iti.uni-luebeck.de">Dariush Forouher</maintainer>
+
+  <license>BSD</license>
+  <author>Dariush Forouher</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>rosgraph_msgs</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+
+</package>

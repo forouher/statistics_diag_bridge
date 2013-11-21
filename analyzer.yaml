@@ -1,0 +1,5 @@
+analyzers:
+  teleop:
+    type: GenericAnalyzer
+    path: Topics
+    startswith: [ '/' ]

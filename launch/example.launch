@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- Start error detection (bridge from statistics to diagnostics) -->
+  <node name="diag_bridge" pkg="statistics_diag_bridge" type="diag_bridge.py" />
+
+  <!-- Start aggregator with a trivial config -->
+  <node name="aggregator" pkg="diagnostic_aggregator" type="aggregator_node">
+    <rosparam file="$(find statistics_diag_bridge)/analyzer.yaml"/>
+  </node>
+
+  <!-- Start Robot monitor -->
+  <node name="monitor" pkg="rqt_robot_monitor" type="rqt_robot_monitor" output="screen"  />
+
+</launch>
+
